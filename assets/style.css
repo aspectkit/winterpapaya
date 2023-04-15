@@ -1,0 +1,50 @@
+:root {
+    --lightblue: #3de7f5;
+    --white: #fff;
+    --pink: #fecfe1;
+    --midpink: #c06d92;
+    --darkpink: #7f003d;
+}
+
+.main-background {
+    background-color: var(--lightblue);
+}
+
+body {
+    /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
+    overflow-x: hidden;
+    min-height: 100vh;
+    /* If you want to change the site height you can remove overflow-y */
+    /* pureSnow will automatically detect height of body tag */
+    overflow-y: hidden;
+    color: white;
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(white, white);
+    /* Workaround for Chromium's selective color inversion */
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+}
+
+.btn-pink {
+    background-color: var(--pink);
+    color: var(--darkpink);
+    transition: all 0.1s;
+    font-family: "Pacifico", sans-serif;
+    font-size: 30px;
+}
+
+#welcome-btn:hover {
+    background-color: var(--pink);
+    box-shadow: 5px 5px 5px var(--midpink);
+}
+
+#welcome-btn:active {
+    background-color: var(--pink);
+    box-shadow: 2px 2px 5px var(--darkpink);
+    transform: translateY(4px);
+}

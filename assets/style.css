@@ -11,6 +11,9 @@
 }
 
 body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
     overflow-x: hidden;
     min-height: 100vh;
@@ -49,15 +52,19 @@ body {
     transform: translateY(4px);
 }
 
-#fader {
+#logo {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999999;
-    pointer-events: none;
-    background: white;
-    animation-duration: 300ms;
-    animation-timing-function: ease-in-out;
+    top: 40px;
+    left: 40px;
+    height: 50px;
+    width: 50px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

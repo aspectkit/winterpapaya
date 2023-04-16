@@ -48,3 +48,16 @@ body {
     box-shadow: 2px 2px 5px var(--darkpink);
     transform: translateY(4px);
 }
+
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    background: white;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+}

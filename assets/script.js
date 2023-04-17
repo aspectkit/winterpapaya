@@ -79,4 +79,7 @@ $('#contact-link').click(function(){
     
 });
 
-
+// code to play music in background
+$(document).ready(function(){
+    $("#chimes").get(0).play();
+});

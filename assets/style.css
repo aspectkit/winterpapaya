@@ -35,7 +35,8 @@ body {
 }
 
 .btn-pink {
-    background-color: var(--pink);
+    /* background-color: var(--pink); */
+    background: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
     color: var(--darkpink);
     text-shadow: 5px 5px 10px rgba(127, 0, 61, 0.4);
     transition: all 0.1s;

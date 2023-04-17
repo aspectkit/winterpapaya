@@ -26,13 +26,27 @@ body {
 
 .snowflake {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     background: linear-gradient(var(--white), var(--white));
     /* Workaround for Chromium's selective color inversion */
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    text-align: center;
+    transform: rotate(20deg);
     filter: drop-shadow(0 0 10px var(--white));
 }
+
+.snowflake::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: var(--white);
+    transform: rotate(135deg);
+}
+
 
 .btn-pink {
     /* background-color: var(--pink); */

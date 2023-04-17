@@ -1,4 +1,11 @@
-let spot = "welcome"
+let spot = "welcome";
+let homeEl = document.getElementById("home-link");
+var clickEvent = new MouseEvent("click", {
+    "view": window,
+    "bubbles": true,
+    "cancelable": false
+});
+
 $('#logo-btn').click(function() {
     $('#welcome-btn').fadeIn('slow');
     fadOutContent();
@@ -8,6 +15,7 @@ $('#logo-btn').click(function() {
 function fadeInContent(){
     //TODO: create navbar where logo is with sections for home (show works), commissions (assuming this is price sheet), and contact page
     $('#navdisplay').fadeIn('slow');
+    homeEl.dispatchEvent(clickEvent);
 }
 
 function fadOutContent(){

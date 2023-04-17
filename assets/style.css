@@ -8,7 +8,7 @@
 
 .main-background {
     /* background-color: var(--lightblue); */
-    background: linear-gradient(270deg, #89f7fe 0%, #66a6ff 100%);
+    background: linear-gradient(225deg, var(--pink), var(--lightblue));
 }
 
 body {

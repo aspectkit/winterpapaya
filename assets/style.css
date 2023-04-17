@@ -36,13 +36,15 @@ body {
 .btn-pink {
     background-color: var(--pink);
     color: var(--darkpink);
+    text-shadow: 5px 5px 10px rgba(127, 0, 61, 0.4);
     transition: all 0.1s;
     font-family: "Pacifico", sans-serif;
     font-size: 30px;
 }
 
 .nav-bg {
-    background-color: var(--pink);
+    background: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
+    /* background-color: var(--pink); */
     padding-bottom: 45px;
 }
 
@@ -53,11 +55,13 @@ body {
 
 .nav-link {
     color: var(--darkpink);
+    text-shadow: 5px 5px 10px rgba(127, 0, 61, 0.4);
     font-family: "Pacifico", sans-serif;
 }
 
 .nav-link:hover {
     box-shadow: 2px 2px 5px var(--darkpink);
+    text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.4);
     color: var(--white);
 }
 
@@ -65,6 +69,7 @@ body {
 
 #welcome-btn:hover {
     background-color: var(--pink);
+    text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.4);
     box-shadow: 5px 5px 5px var(--midpink);
 }
 

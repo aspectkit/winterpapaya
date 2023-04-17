@@ -128,6 +128,4 @@ else {
   window.onload = createSnow;
 }
 
-// TODO add option to easily re-render scenery. For example when window resizes.
-// this should be easy as CSS rerenders after display block -> none -> block;
-// TODO add progress bar for slower clients
+

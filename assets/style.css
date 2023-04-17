@@ -53,7 +53,7 @@ body {
 }
 
 .nav-link:active{
-    font-size: 15px;
+    transform: translateY(2px);
     color: var(--white);
 }
 
@@ -79,6 +79,7 @@ body {
     color: var(--darkpink);
     text-shadow: 5px 5px 10px rgba(127, 0, 61, 0.4);
     font-family: "Pacifico", sans-serif;
+    font-size: 20px;
 }
 
 

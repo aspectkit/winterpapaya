@@ -16,6 +16,14 @@ function fadeInContent(){
     //TODO: create navbar where logo is with sections for home (show works), commissions (assuming this is price sheet), and contact page
     $('#navdisplay').fadeIn('slow');
     homeEl.dispatchEvent(clickEvent);
+
+    $('#toggle').css("position", "fixed");
+    $('#toggle').css("top", "15px");
+    $('#toggle').css("left", "45px");
+    $('#toggle').css("height", "50px");
+    $('#toggle').css("width", "50px");
+    $('#toggle-label').text("");
+    $('#toggle').fadeIn('slow');
 }
 
 function fadOutContent(){
@@ -28,6 +36,9 @@ function fadOutContent(){
 $('#welcome-btn').click(function() {
     spot = "home";
     $('#welcome-btn').fadeOut('slow');
+    // $('#toggle').fadeOut('slow');
+    // $('#toggle-snow').fadeOut('slow');
+    // $('#toggle-label').fadeOut('slow');
     fadeInContent();
 });
 

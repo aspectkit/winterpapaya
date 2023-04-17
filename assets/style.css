@@ -123,6 +123,17 @@ body {
     animation: shimmer 1s infinite;
 }
 
+#toggle-label{
+    font-family: "Pacifico", sans-serif;
+    font-size: 20px;
+    color: var(--midpink);
+}
+
+#toggle-snow {
+    /* color: var(--pink); */
+    background-color: var(--midpink);
+}
+
 @keyframes shimmer {
     100% {-webkit-mask-position:left}
 }

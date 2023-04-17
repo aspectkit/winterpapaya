@@ -25,3 +25,39 @@ $('#welcome-btn').click(function() {
 
 
 
+$('#home-link').click(function(){
+    $('#home-link').addClass("shimmer");
+    $('#home-link').css("color", "var(--white)");
+
+    $('#comm-link').removeClass("shimmer");
+    $('#comm-link').css("color", "var(--darkpink)");
+
+    $('#contact-link').removeClass("shimmer");
+    $('#contact-link').css("color", "var(--darkpink)");
+});
+
+$('#comm-link').click(function(){
+    $('#comm-link').addClass("shimmer");
+    $('#comm-link').css("color", "var(--white)");
+
+    $('#home-link').removeClass("shimmer");
+    $('#home-link').css("color", "var(--darkpink)");
+    
+
+    $('#contact-link').removeClass("shimmer");
+    $('#contact-link').css("color", "var(--darkpink)");
+});
+
+$('#contact-link').click(function(){
+    $('#contact-link').addClass("shimmer");
+    $('#contact-link').css("color", "var(--white)");
+
+    $('#home-link').removeClass("shimmer");
+    $('#home-link').css("color", "var(--darkpink)");
+
+    $('#comm-link').removeClass("shimmer");
+    $('#comm-link').css("color", "var(--darkpink)");
+    
+});
+
+

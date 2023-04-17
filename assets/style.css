@@ -101,8 +101,8 @@ body {
 
 #logo {
     position: fixed;
-    top: 10px;
-    left: 20px;
+    top: 5px;
+    left: 0px;
     height: 50px;
     width: 50px;
 }

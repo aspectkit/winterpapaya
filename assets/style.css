@@ -123,6 +123,8 @@ body {
     animation: shimmer 1s infinite;
 }
 
+
+
 #toggle-label{
     font-family: "Pacifico", sans-serif;
     font-size: 20px;
@@ -130,8 +132,11 @@ body {
 }
 
 #toggle-snow {
-    /* color: var(--pink); */
-    background-color: var(--midpink);
+    background-color: var(--white);
+}
+
+#toggle-snow:checked {
+    background-color: var(--darkpink);
 }
 
 @keyframes shimmer {
